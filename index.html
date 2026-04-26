@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <title>Lauren Mann | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Lauren Mann, a self-taught developer building real tools while learning the fundamentals.">
+    <meta name="author" content="Lauren Mann">
+    <!-- TODO: Add <link rel="canonical" href="FINAL_GITHUB_PAGES_URL"> after the GitHub Pages URL is final. -->
+    <!-- TODO: Add <meta property="og:url" content="FINAL_GITHUB_PAGES_URL"> after the GitHub Pages URL is final. -->
+    <!-- TODO: Add <meta name="twitter:url" content="FINAL_GITHUB_PAGES_URL"> after the GitHub Pages URL is final. -->
+    <meta property="og:title" content="Lauren Mann | Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Lauren Mann, a self-taught developer building real tools while learning the fundamentals.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lauren Mann | Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="assets/social-preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1309">
+    <meta property="og:image:height" content="639">
+    <meta property="og:image:alt"
+        content="Warm portfolio preview card for Lauren Mann with stars, books, and the text Self-taught developer building real tools">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lauren Mann | Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Lauren Mann, a self-taught developer building real tools while learning the fundamentals.">
+    <meta name="twitter:image" content="assets/social-preview.png">
+    <meta name="twitter:image:alt"
+        content="Warm portfolio preview card for Lauren Mann with stars, books, and the text Self-taught developer building real tools">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="154x154" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav aria-label="Primary">
+            <h1 class="nav-brand">
+                <picture>
+                    <source media="(max-width: 430px)" srcset="assets/initials-transparent.png">
+                    <img src="assets/nav-name-transparent.png" alt="Lauren Mann" width="1890" height="832">
+                </picture>
+            </h1>
+            <ul>
+                <li><a href="#about" data-panel-link="about" aria-controls="about" class="active-link" aria-current="page">About</a></li>
+                <li><a href="#projects" data-panel-link="projects" aria-controls="projects">Projects</a></li>
+                <li><a href="#learning" data-panel-link="learning" aria-controls="learning">Learning</a></li>
+                <li><a href="#contact" data-panel-link="contact" aria-controls="contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" type="button" aria-label="Switch to sunset theme" aria-pressed="false">
+                <span class="visually-hidden">Switch to sunset theme</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section id="hero">
+            <img src="assets/profile.jpg"
+                alt="Dreamy illustrated scene of a woman sitting outdoors with a cat at sunset" class="profile-pic"
+                width="698" height="698">
+            <div class="hero-text">
+                <h2>Hi, I'm Lauren.</h2>
+                <p class="hero-intro">I'm a self-taught developer building real tools while learning the fundamentals.
+                </p>
+            </div>
+        </section>
+
+        <section class="growth-card growth-card-standalone" aria-labelledby="growth-card-title" hidden inert aria-hidden="true">
+            <div class="growth-card-text">
+                <p class="eyebrow">Built So Far</p>
+                <h2 id="growth-card-title">A small collection, still growing</h2>
+                <p>
+                    Each build adds another
+                    <span class="growth-word growth-word-star">star</span><span
+                        class="growth-word growth-word-book">book</span>
+                    to the story.
+                </p>
+            </div>
+            <div class="growth-visual" aria-hidden="true">
+                <span class="growth-item growth-item-memory"></span>
+                <span class="growth-item growth-item-featured"></span>
+                <span class="growth-item growth-item-future"></span>
+            </div>
+        </section>
+
+        <section id="about" class="content-panel active-panel">
+            <p class="eyebrow">About Me</p>
+            <h2>Building useful things, one project at a time</h2>
+            <p>
+                It started with a Stardew Valley mod. I wanted to change a motorcycle
+                in a game I loved, figured out how, and realized I wanted to build bigger things.
+            </p>
+
+            <p>
+                I'm a self-taught developer learning through hands-on projects, focused on
+                C#, JavaScript, HTML, and CSS. I like building tools that solve real problems,
+                then refining them until they feel clearer and easier to use.
+            </p>
+
+            <p>
+                As a stay-at-home mom, I'm building my skills around real life, one project at a time.
+                My goal is to keep growing into a developer who can make useful apps with thoughtful
+                design and solid fundamentals.
+            </p>
+        </section>
+
+        <section id="projects" class="content-panel project-panel" hidden inert aria-hidden="true">
+            <article class="featured-project-card" aria-labelledby="lore-ledger-title">
+                <p class="eyebrow">Featured Project</p>
+                <div class="project-title-row">
+                    <img src="assets/lore-ledger-icon.png" alt="" class="project-app-icon" width="180" height="180">
+                    <h2 id="lore-ledger-title" class="lore-ledger-project-title">Lore Ledger</h2>
+                </div>
+                <p>
+                    Lore Ledger is a local-first JavaScript app for organizing D&amp;D campaign notes,
+                    characters, maps, and combat tracking in one place.
+                </p>
+                <p>
+                    I built it to solve a problem I kept running into at the table: too many scattered
+                    tools during prep and play, and not enough calm in the middle of a session.
+                </p>
+                <p>
+                    It demonstrates local storage, modular UI patterns, accessibility, data safety,
+                    and practical workflow design. I'm currently expanding it with a D&amp;D 5e
+                    character creator.
+                </p>
+                <div class="project-links">
+                    <p class="project-link-wrap">
+                        <a href="https://lore-ledger.com" target="_blank" rel="noopener noreferrer"
+                            class="project-link-with-logo">
+                            <img src="assets/lore-ledger-logo.png" alt="" class="project-link-logo" width="192" height="192">
+                            <span>Check out Lore Ledger</span>
+                        </a>
+                    </p>
+                    <p class="project-link-wrap">
+                        <a href="https://github.com/Lrmann818/Lore-Ledger" target="_blank" rel="noopener noreferrer"
+                            class="icon-text-link">
+                            <img src="assets/GitHub_Invertocat_White.svg" alt="" class="inline-icon github-theme-icon"
+                                data-theme-icon="github" width="98" height="96">
+                            <span>View the GitHub repository</span>
+                        </a>
+                    </p>
+                </div>
+            </article>
+
+            <article class="secondary-project" aria-labelledby="stardew-mod-title">
+                <p class="eyebrow">What Started It All</p>
+                <h2 id="stardew-mod-title">Cruiser for the Motorcycle Mod - Continued</h2>
+                <p>
+                    My first hands-on modding project. I changed the look of a motorcycle in Stardew Valley and realized
+                    I wanted to keep building bigger things.
+                </p>
+                <p class="project-link-wrap">
+                    <a href="https://www.nexusmods.com/stardewvalley/mods/37125" target="_blank"
+                        rel="noopener noreferrer" class="project-link-with-logo">
+                        <img src="assets/stardew-motorcycle-mod.gif" alt=""
+                            class="project-link-logo" width="256" height="256">
+                        <span>View the Stardew Valley mod</span>
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section id="learning" class="content-panel" hidden inert aria-hidden="true">
+            <p class="eyebrow">Learning</p>
+            <h2>Currently Learning</h2>
+            <p>
+                I'm strengthening my JavaScript, HTML, CSS, and C# fundamentals by applying them to real
+                projects as I build. I'm also working through freeCodeCamp's Full Stack Developer
+                curriculum to fill in gaps and keep a steady learning path.
+            </p>
+            <ul>
+                <li>
+                    <a href="https://dotnet.microsoft.com/en-us/learntocode" target="_blank" rel="noopener noreferrer">
+                        Learn C# with Microsoft
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.freecodecamp.org/learn/full-stack-developer/" target="_blank"
+                        rel="noopener noreferrer">
+                        freeCodeCamp - Full Stack Developer Curriculum
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="content-panel" hidden inert aria-hidden="true">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's connect</h2>
+            <p>Want to see what I'm building or get in touch? You can find me here:</p>
+            <p>
+                <a href="https://github.com/Lrmann818" target="_blank" rel="noopener noreferrer" class="icon-text-link">
+                    <img src="assets/GitHub_Invertocat_White.svg" alt="" class="inline-icon github-theme-icon" data-theme-icon="github"
+                        width="98" height="96">
+                    <span>github.com/Lrmann818</span>
+                </a>
+            </p>
+            <p>
+                <a href="mailto:lrmann100@gmail.com" class="icon-text-link">
+                    <span class="inline-icon mask-icon email-icon" aria-hidden="true"></span>
+                    <span>lrmann100@gmail.com</span>
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lauren Mann</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
