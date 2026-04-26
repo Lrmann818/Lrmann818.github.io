@@ -4,7 +4,7 @@ A simple static developer portfolio built with HTML, CSS, and JavaScript. This s
 
 ## Live Site
 
-Live site: TODO - add the final GitHub Pages URL after deployment.
+Live site: https://lrmann818.github.io
 
 ## Tech Stack
 
@@ -101,11 +101,11 @@ This is a static site and is ready for GitHub Pages hosting without a build step
 
 ### GitHub Pages
 
-- Deployment URL: TODO - add the final GitHub Pages URL after the repository and Pages settings are final.
-- Suggested setup: deploy from the main branch root, or from a `/docs` folder if the repository settings require it.
+- Deployment URL: https://lrmann818.github.io
+- Suggested setup: deploy from the `main` branch and the repository root.
 - Build command: none.
-- Publish directory: repository root when deploying from the main branch root.
-- After the final URL is known, update the canonical, `og:url`, and `twitter:url` TODOs in `index.html`.
+- Publish directory: repository root.
+- The canonical URL, `og:url`, and `twitter:url` metadata in `index.html` are set to the GitHub Pages URL.
 - GitHub Pages does not support custom HTTP response headers from this repository alone. The current CSP is provided by a `<meta http-equiv="Content-Security-Policy">` tag in `index.html`.
 
 ## Future Polish Ideas
@@ -114,7 +114,6 @@ This is my personal portfolio v1. It is intentionally small and focused, with ro
 
 Possible future improvements:
 
-- Add the final GitHub Pages URL once deployment is complete
 - Add more project write-ups as the portfolio grows
 - Refine the social preview image if the site branding changes
 - Add a short notes or changelog section if the project keeps evolving
