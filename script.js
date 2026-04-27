@@ -12,6 +12,7 @@
   const skipLink = document.querySelector('.skip-link');
   const mainContent = document.querySelector('#main-content');
   const githubThemeIcons = Array.from(document.querySelectorAll('[data-theme-icon="github"]'));
+  const growthCandle = document.querySelector('.growth-candle');
 
   if (!panelLinks.length || !panels.length) {
     return;
@@ -115,6 +116,23 @@
 
   updateThemeButton(startingTheme);
   updateThemeIcons(startingTheme);
+
+  growthCandle?.addEventListener('click', () => {
+    const isOut = growthCandle.classList.toggle('is-out');
+    growthCandle.setAttribute(
+      'aria-label',
+      isOut ? 'Relight candle' : 'Blow out candle'
+    );
+
+    if (isOut) {
+      growthCandle.classList.remove('is-smoking');
+      void growthCandle.offsetWidth;
+      growthCandle.classList.add('is-smoking');
+      window.setTimeout(() => {
+        growthCandle.classList.remove('is-smoking');
+      }, 900);
+    }
+  });
 
   themeToggle?.addEventListener('click', () => {
     const currentTheme = document.documentElement.dataset.theme;
