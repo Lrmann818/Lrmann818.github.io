@@ -702,8 +702,8 @@ nav,
 }
 
 .growth-item-featured {
-  left: 2.55rem;
-  top: 1.2rem;
+  left: 2.05rem;
+  top: 1.1rem;
   width: 0.85rem;
   height: 0.85rem;
   border-radius: 999px;
@@ -712,8 +712,8 @@ nav,
 }
 
 .growth-item-memory {
-  left: 1.15rem;
-  top: 1.4rem;
+  left: 0.75rem;
+  top: 1.55rem;
   width: 0.58rem;
   height: 0.58rem;
   border-radius: 999px;
@@ -722,25 +722,46 @@ nav,
   box-shadow: 0 0 0.7rem var(--link), 0 0 1.15rem var(--accent);
 }
 
-.growth-item-future {
-  left: 4.45rem;
-  top: 1.05rem;
-  width: 0.34rem;
-  height: 0.34rem;
+.growth-item-third {
+  left: 3.55rem;
+  top: 1.75rem;
+  width: 0.62rem;
+  height: 0.62rem;
   border-radius: 999px;
-  background-color: var(--text-secondary);
-  opacity: 0.42;
-  box-shadow: 0 0 0.55rem var(--text-secondary);
+  background-color: var(--link);
+  opacity: 0.86;
+  box-shadow: 0 0 0.7rem var(--link), 0 0 1.25rem var(--accent);
+}
+
+.growth-item-fourth {
+  left: 4.85rem;
+  top: 0.95rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background-color: var(--link);
+  opacity: 0.8;
+  box-shadow: 0 0 0.7rem var(--link), 0 0 1.1rem var(--accent);
 }
 
 :root:not([data-theme="sunset"]) .growth-item-featured,
-:root:not([data-theme="sunset"]) .growth-item-memory {
+:root:not([data-theme="sunset"]) .growth-item-memory,
+:root:not([data-theme="sunset"]) .growth-item-third,
+:root:not([data-theme="sunset"]) .growth-item-fourth {
   animation: star-twinkle 2.6s ease-in-out infinite;
   will-change: transform, filter, box-shadow;
 }
 
 :root:not([data-theme="sunset"]) .growth-item-memory {
   animation-delay: 1.35s;
+}
+
+:root:not([data-theme="sunset"]) .growth-item-third {
+  animation-delay: 0.65s;
+}
+
+:root:not([data-theme="sunset"]) .growth-item-fourth {
+  animation-delay: 2s;
 }
 
 @keyframes star-twinkle {
@@ -809,11 +830,17 @@ nav,
   opacity: 0.72;
 }
 
-:root[data-theme="sunset"] .growth-item-future {
-  width: 0.38rem;
-  height: 1.15rem;
-  background-color: var(--text-secondary);
-  opacity: 0.28;
+:root[data-theme="sunset"] .growth-item-third {
+  width: 0.66rem;
+  height: 2.5rem;
+  background-color: var(--accent);
+}
+
+:root[data-theme="sunset"] .growth-item-fourth {
+  width: 0.58rem;
+  height: 2.15rem;
+  background-color: var(--accent);
+  opacity: 0.78;
 }
 
 .growth-candle {
@@ -1349,6 +1376,10 @@ h4,
   letter-spacing: -0.01em;
 }
 
+.secondary-project .project-title-row h2 {
+  margin-bottom: 0;
+}
+
 
 /* Contact links */
 #contact a,
@@ -1407,18 +1438,23 @@ h4,
   }
 
   .growth-item-featured {
-    left: 1.75rem;
-    top: 1.08rem;
+    left: 1.3rem;
+    top: 0.95rem;
   }
 
   .growth-item-memory {
-    left: 0.85rem;
-    top: 1.3rem;
+    left: 0.3rem;
+    top: 1.35rem;
   }
 
-  .growth-item-future {
-    left: 3.45rem;
-    top: 0.7rem;
+  .growth-item-third {
+    left: 2.6rem;
+    top: 1.5rem;
+  }
+
+  .growth-item-fourth {
+    left: 3.65rem;
+    top: 0.75rem;
   }
 
   nav {
@@ -1573,15 +1609,19 @@ h4,
   }
 
   .growth-item-featured {
-    left: 1.45rem;
+    left: 1.05rem;
   }
 
   .growth-item-memory {
-    left: 0.55rem;
+    left: 0.15rem;
   }
 
-  .growth-item-future {
-    left: 3rem;
+  .growth-item-third {
+    left: 2.2rem;
+  }
+
+  .growth-item-fourth {
+    left: 3.15rem;
   }
 
   .profile-pic {
@@ -1602,6 +1642,8 @@ h4,
 
   :root:not([data-theme="sunset"]) .growth-item-featured,
   :root:not([data-theme="sunset"]) .growth-item-memory,
+  :root:not([data-theme="sunset"]) .growth-item-third,
+  :root:not([data-theme="sunset"]) .growth-item-fourth,
   .candle-flame,
   .growth-candle.is-smoking .candle-smoke,
   .particle {

@@ -18,7 +18,7 @@ Live site: https://lrmann818.github.io
 
 - Responsive layout for desktop and mobile screens
 - Dark/sunset theme toggle with saved theme preference
-- Project showcase featuring Lore Ledger and my first Stardew Valley mod
+- Project showcase featuring Lore Ledger, the Usable Again and Oilfield Tubing Tally iPhone apps, and my first Stardew Valley mod
 - Accessible skip link and keyboard-friendly navigation
 - Tabbed content sections for About, Projects, Learning, and Contact
 - Metadata for social previews, including Open Graph and Twitter card image assets
@@ -46,23 +46,22 @@ You can also open `index.html` directly in a browser, but Live Server gives a sm
 ├── assets/
 │   ├── GitHub_Invertocat_Black.svg
 │   ├── GitHub_Invertocat_White.svg
-│   ├── alt-icon.png
 │   ├── apple-touch-icon.png
 │   ├── darkThemeIcon.svg
 │   ├── envelope.svg
 │   ├── favicon.ico
 │   ├── favicon-16x16.png
 │   ├── favicon-32x32.png
-│   ├── icon.PNG
 │   ├── initials-transparent.png
 │   ├── lightThemeIcon.svg
 │   ├── lore-ledger-icon.png
 │   ├── lore-ledger-logo.png
 │   ├── nav-name-transparent.png
+│   ├── oilfield-tubing-tally-icon.png
 │   ├── profile.jpg
-│   ├── profile.png
 │   ├── social-preview.png
-│   └── stardew-motorcycle-mod.gif
+│   ├── stardew-motorcycle-mod.gif
+│   └── usable-again-icon.png
 ├── index.html
 ├── script.js
 ├── styles.css
